@@ -7,11 +7,35 @@
     <title> DOT </title>
 </head>
 <body> 
-    <div id="mySidenav" class="sidenav"> </div>
+ 
+
+    <div id="mySidenav" class="sidenav">
+        <center> <font style="font-family: Arial;">
+        <h2>DOT</h2>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <button onclick="window.location.href='/';" class="btn">
+            <span class="btn-text-one">Support</span>
+            <span style="color: black;" class="btn-text-two">Click Here!</span>
+        </button>
+        <h6>‎</h6>
+  
+      <button type="button" onclick="window.location.reload();" onclick="window.location.href='/';" class="btn">
+            <span class="btn-text-one">Reload</span>
+            <span style="color: black;" class="btn-text-two">Click Here!</span>
+        </button></center></font>
+      </div>
+      
+      <!-- Use any element to open the sidenav -->
+      
+      
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+   
+
+
 
        <font style="font-family: Arial;">
 <div class="box">      
-    <img src="https://imagetolink.com/ib/rxrxW0OA4E.jpg" alt="ImageNOT Loading" width="45" height="40" />
+  <span onclick="openNav()">  <img src="https://imagetolink.com/ib/rxrxW0OA4E.jpg" alt="ImageNOT Loading" width="45" height="40" /></span>
     <center><h1 style="color: rgb(255, 255, 255);">DOT</h1>
     <button onclick="window.location.href='/';" class="btn">
         <span class="btn-text-one">Home</span>
@@ -39,26 +63,112 @@
 <div class="text1"> 
      <h2 style="color: #000000;"> <b> ‎ ‎ ‎ ‎ ‎ Discover </b></h2></div>
 
+     
+
 <img class="box2" src="https://imagetolink.com/ib/Cim0NHCjsg.jpg" alt="IMG Failed">
 
 <center><img class="box2" src="https://imagetolink.com/ib/iwhyENnro9.jpg"  alt="IMG Failed"></center>
 
 <img class="box5" src="https://imagetolink.com/ib/a3a66n2x7g.jpg"  alt="IMG Failed">
-<h3 class="box2">Out Of Stock!</h3>
-<h3 class="box2">Out Of Stock!</h3>
-<h3 class="box5">Out Of Stock!</h3>
-<div class="box3">  <div class="text3">
-  
- <h2 style="color: #000000;"> <b> Clothing: </b></h2> 
- <img class="shape1" src="https://imagetolink.com/ib/DMQmOVp8S0.jpg"  alt="IMG Failed">
- 
 
-</div></div>
+  <div class="text3">
+  <div class="box3">
+
+    <div class="text1"> 
+        <h2 style="color: #000000;"> <b> ‎ ‎ ‎ ‎ ‎ Our Stock: </b></h2></div>
+
+ <img  src="https://imagetolink.com/ib/DMQmOVp8S0.jpg"  alt="IMG Failed" width="200" height="300" >
+ <img  src="https://imagetolink.com/ib/DMQmOVp8S0.jpg"  alt="IMG Failed" width="200" height="300" >
+ <img  src="https://imagetolink.com/ib/DMQmOVp8S0.jpg"  alt="IMG Failed" width="200" height="300" >
+ <img  src="https://imagetolink.com/ib/DMQmOVp8S0.jpg"  alt="IMG Failed" width="200" height="300" >
+ <img  src="https://imagetolink.com/ib/DMQmOVp8S0.jpg"  alt="IMG Failed" width="200" height="300" >
+ <img  src="https://imagetolink.com/ib/DMQmOVp8S0.jpg"  alt="IMG Failed" width="200" height="300" >
+
+ <center> <h1> Coming Soon </h1>
+
+<p> Made by PlingifyPlug For DOT. </p>
+<p>  </p>
+<div id = "digital-clock"> </div>
+
+</center>
+
+
+
+</div></div></div>
 
     </div>
 </font>
 </body>
+<script src = "script.js"> </script>
 <style>
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background: linear-gradient(#fcfcfc, #444343ce);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+/* Importing Open Sans Condensed Google font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+
+#digital-clock {
+ background-color: #66ffff;
+ width: 35%;
+ margin: auto;
+ padding-top: 50px;
+ padding-bottom: 50px;
+ font-family: 'Open Sans Condensed', sans-serif;
+ font-size: 64px;
+ text-align: center;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 img {
   border-radius: 5px;
@@ -68,7 +178,7 @@ img {
 
 .box2
 {
-    margin-left: 10px;
+
     border-radius: 10px;
     width: 513px;
     height: 270px;
@@ -79,27 +189,26 @@ img {
 .box5
 {
     margin-left: 10px;
-    border-radius: 10px;
-    width: 284px;
-    height: 350px;
-    float: right;
+    border-radius: 0px;
+    width: 280px;
+    height: 330px;
+
 }
 
 .box3
 {    
     padding: 0px;
-    margin: -5px;
+    margin: -13px;
     width: 1340px;
-    height: 800x;
+    height: 1000px;
     background-color: #ffffff;
-    border: 0px solid rgb(255, 255, 255);
     border-radius: 0px 0px 5px 5px;
 
 }
 
  body {
-    height: 1300px;
-    background: linear-gradient(#ffffff, #444343ce);
+    height: 1700px;
+    background: linear-gradient(#949393, #444343ce);
  }
 
  .box{
@@ -122,7 +231,7 @@ border-radius: 5px 5px 0px 0px;
 }
 
 .text3{
-    margin-left: 45px;
+    margin-left: 13px;
     text-align: left;
 }
 
@@ -130,8 +239,8 @@ border-radius: 5px 5px 0px 0px;
     padding: 1px;
     width: 200px;
     height: 300px;
-
 }
+
 
 .btn {
   width: 150px;
@@ -181,9 +290,80 @@ border-radius: 5px 5px 0px 0px;
 
 </style>
 <script>
-   
+   /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  document.body.style.backgroundColor = "white";
+}
 </script>
 
+<SCRIPT language="JavaScript"> 
+
+function Time() {
+
+ // Creating object of the Date class
+ var date = new Date();
+
+ // Get current hour
+ var hour = date.getHours();
+ // Get current minute
+ var minute = date.getMinutes();
+ // Get current second
+ var second = date.getSeconds();
+
+ // Variable to store AM / PM
+ var period = "";
+
+ // Assigning AM / PM according to the current hour
+ if (hour >= 12) {
+ period = "PM";
+ } else {
+ period = "AM";
+ }
+
+ // Converting the hour in 12-hour format
+ if (hour == 0) {
+ hour = 12;
+ } else {
+ if (hour > 12) {
+ hour = hour - 12;
+ }
+ }
+
+ // Updating hour, minute, and second
+ // if they are less than 10
+ hour = update(hour);
+ minute = update(minute);
+ second = update(second);
+
+ // Adding time elements to the div
+ document.getElementById("digital-clock").innerText = hour + " : " + minute + " : " + second + " " + period;
+
+ // Set Timer to 1 sec (1000 ms)
+ setTimeout(Time, 1000);
+}
+
+ // Function to update time elements if they are less than 10
+ // Append 0 before time elements if they are less than 10
+function update(t) {
+ if (t < 10) {
+ return "0" + t;
+ }
+ else {
+ return t;
+ }
+}
+
+Time();
+</SCRIPT>
 
 <SCRIPT language=JavaScript>
 
